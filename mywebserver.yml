@@ -13,13 +13,14 @@
       state: started
     when: ansible_os_family =="Debian"
 
-  - name: i want to install webserver on RedHat ansible nodes
+  - name: i want to install webserver RedHat ansible nodes
     yum:
       name: httpd
       state: present
     when: ansible_os_family =="RedHat"
+
   - name: i want start mywebserver on RedHat ansible nodes
     service:
        name: httpd
        state: started
-    
+    when: ansible_os_family =="*RedHat*"
