@@ -1,5 +1,5 @@
 ---
-- name: create file on ansible node
-  file:
-    path: /home/ubuntu/mytestfile
-    state: touch
+ - name: create file on ansible node
+   file:
+     path: /home/ubuntu/mytestfile
+     state: touch
