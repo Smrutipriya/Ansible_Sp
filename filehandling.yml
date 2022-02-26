@@ -3,5 +3,6 @@
   become: yes
   tasks: 
   - name: create file on ansible node
-    path: /home/ubuntu/mytestfile
-    state: touch
+    file:
+      path: /home/ubuntu/mytestfile
+      state: touch
