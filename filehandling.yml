@@ -8,7 +8,7 @@
       name: apache2
       state: present
     notify: restartwebserver
-    
+
   - name: i want to copy my index file into ansible node
     template:
       src: myindex.j2
@@ -16,8 +16,7 @@
     notify: restartwebserver
 
   handlers:
-  - name: i want to restartwebserver
+  - name: restartwebserver
     service:
       name: apache2
       state: restart
-    notify: restartwebserver
