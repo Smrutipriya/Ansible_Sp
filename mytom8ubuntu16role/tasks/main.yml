@@ -1,2 +1,2 @@
 ---
-# tasks file for mytom8ubuntu16role
+- include_tasks: installjava.yml
