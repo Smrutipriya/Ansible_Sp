@@ -1,0 +1,5 @@
+---
+- hosts: myapplicationserver
+  become: tes
+  roles: 
+  - {role: mytom8ubuntu16role, when: anible_os_family =="Debian"}
